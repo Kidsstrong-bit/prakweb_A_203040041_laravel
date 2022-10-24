@@ -16,26 +16,17 @@ use App\Models\Post;
 */
 
 Route::get('/', function () {
-    return view('home', [
-        "title" => "Home"
-    ]);
+    return view('home');
 });
 
 Route::get('/about', function () {
     return view('about', [
-        "title" => "About",
         "name" => "Gilang Ramadhan",
         "email" => "gilangyouth1@gmail.com",
         "image" => "gilang.jpg"
     ]);
 });
 
-
-Route::get('/blog', [PostController::class, 'index']);
-
-// halaman single post
-Route::get('post/{slug}', [PostController::class, 'show']
-
-
-
-);
+Route::get('/blog', function () {
+    return view('posts');
+});

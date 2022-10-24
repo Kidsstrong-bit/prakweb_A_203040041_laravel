@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+<<<<<<< HEAD
 class Post 
 {
     private static $blog_posts = [
@@ -30,4 +31,10 @@ class Post
         return $posts->firstWhere('slug', $slug);
 
     }
+=======
+
+
+class Post
+{
+>>>>>>> d2f9b471694f517764fb15dd5139a83fd0bbb04a
 }
